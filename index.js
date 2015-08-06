@@ -3,12 +3,11 @@
 
 module.exports = {
   name: 'ember-list-view',
-  init: function(name) {
-    var assets_path = require('path').join('layout-bin-packer','index.js');
-    this.treePaths['vendor'] = require.resolve('layout-bin-packer').replace(assets_path, '');
+  init: function(app) {
+    this.app = app;
   },
 
   included: function(app) {
-    this.app.import('vendor/layout-bin-packer/index.js');
+    this.app.import('vendor/layout-bin-packer.js');
   }
 };

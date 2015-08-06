@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import layout from './ember-list-template';
+import layout from 'ember-list-view/templates/ember-list';
 
 var decodeEachKey = Ember.__loader.require('ember-htmlbars/utils/decode-each-key')['default'];
 
