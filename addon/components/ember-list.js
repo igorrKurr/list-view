@@ -188,7 +188,7 @@ export default Ember.Component.extend({
   calculateBounds() {
     // TODO measure clientWidth and clientHeight vs offsetWidth and offsetHeight
     this.element.style.overflow = 'scroll';
-    this.element.style.webkitOverflowScrolling = 'touch';
+    this.element.style.webkitOverflowScrolling = 'auto';
     this.element.style.webkitTransform = 'translate3d(0px, 0px, 0px) scale(1)';
     this.element.style.position = 'relative';
     this.element.style.boxSizing = 'border-box';
